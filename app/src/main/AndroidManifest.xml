@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.masksprite">
+    <!--添加蓝牙权限-->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN."/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <!--位置权限-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
 
     <application
         android:allowBackup="true"
@@ -25,7 +30,8 @@
         <!--引导页-->
         <activity android:name=".ui.GuideActivity" />
         <!--主页面-->
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity"
+            android:label="蓝牙按摩口罩"/>
     </application>
 
 </manifest>
