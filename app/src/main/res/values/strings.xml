@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">MaskSprite</string>
     <string name="btn_start">进入主页</string>
-    <string name="name">口罩妖怪</string>
+    <string name="name">温控按摩口罩</string>
     <string name="search">搜索设备</string>
+    <string name="control_blue">蓝牙控制</string>
+    <string name="news_selection">资讯推选</string>
+    <string name="weather">天气预报</string>
 </resources>
