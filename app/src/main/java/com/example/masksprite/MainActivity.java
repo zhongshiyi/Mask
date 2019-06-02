@@ -24,9 +24,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     //Fragment
     private List<Fragment> mFragment;
 
-    public MainActivity() {
-    }
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,9 +38,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void initData() {
         mTitle = new ArrayList<>();
-        mTitle.add(getResources().getString(R.string.control_blue));
-        mTitle.add(getResources().getString(R.string.news_selection));
-        mTitle.add(getResources().getString(R.string.weather));
+        mTitle.add(getResources().getString(R.string.control_blue));//蓝牙控制
+        mTitle.add(getResources().getString(R.string.news_selection));//资讯推送
+        mTitle.add(getResources().getString(R.string.weather));//天气预报
 
         mFragment = new ArrayList<>();
         mFragment.add(new BlueFragment());
