@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import com.example.masksprite.R;
 
-import com.example.masksprite.ui.WeatherActivity;
+import com.example.masksprite.ui.WeatherMain;
 
 /**
  * 项目名：    MaskSprite
@@ -42,7 +42,7 @@ public class WeatherFragment extends Fragment implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.tv_weather:
-                startActivity(new Intent(getActivity(),WeatherActivity.class));
+                startActivity(new Intent(getActivity(),WeatherMain.class));
                 break;
         }
     }

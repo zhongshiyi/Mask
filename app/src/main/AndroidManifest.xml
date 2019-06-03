@@ -26,6 +26,7 @@
     <uses-permission android:name="android.permission.BLUETOOTH"/>
 
     <application
+        android:name="org.litepal.LitePalApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -48,12 +49,19 @@
         <!--主页面-->
         <activity android:name=".MainActivity"
             android:label="蓝牙按摩口罩"/>
-        <!--天气预报页面-->
-        <activity android:name=".ui.WeatherActivity"
-            android:theme="@style/NOActivityFullscreen"/>
-        <!--配置key-->
+        <!--配置高德key-->
         <meta-data android:name="com.amap.api.v2.apikey" android:value="a66687235d8f9a55fa57b691b36cd09c"/>
         <service android:name="com.amap.api.location.APSService"/>
+
+        <service
+            android:name=".AutoUpdateService"
+            android:enabled="true"
+            android:exported="true"/>
+        <!--天气预报页面-->
+        <activity android:name=".ui.WeatherMain" />
+        <activity android:name=".ui.WeatherActivity"/>
+
+
     </application>
 
 </manifest>
